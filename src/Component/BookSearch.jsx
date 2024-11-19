@@ -73,7 +73,7 @@ const BookSearch = ({ onClose, setSearchQuery }) => {
                 onClick={() => handleSuggestionClick(book)}
               >
                 <img
-                  src={`/src/assets/images/${book.image}`} // Ensure you are accessing image property from the book object
+                  src={book.image} // Ensure you are accessing image property from the book object
                   alt={book.name}
                   className="w-12 h-12 object-cover rounded mr-4"
                 />

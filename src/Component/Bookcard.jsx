@@ -7,13 +7,12 @@ const Bookcard = ({
   onToggleFavorite,
   isFavorite,
 }) => {
-  const imagePath = `/src/assets/images/${gallery.image}`;
 
   return (
     <div className="bg-gray-800 mt-20 p-4 rounded-lg border border-gray-700 shadow-lg max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto z-10">
       {/* Book Image */}
       <img
-        src={imagePath}
+        src={gallery.image}
         alt="Book Cover"
         className="w-full h-60 sm:h-72 md:h-80 lg:h-96 object-cover rounded-md mb-4 cursor-pointer hover:scale-105 transition-transform duration-300 dark:brightness-75"
         onClick={onImageClick}

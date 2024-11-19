@@ -5,7 +5,8 @@ const ModalMaking = ({ book, onClose, onAddToCart }) => {
     return null;
   }
 
-  const imagePath = `/src/assets/images/${book.image}`;
+ console.log(book);
+ 
 
   return (
     <div className="w-2/4 h-80 border bg-slate-800 text-white rounded flex">
@@ -37,7 +38,7 @@ const ModalMaking = ({ book, onClose, onAddToCart }) => {
         </div>
       </div>
       <img
-        src={imagePath}
+        src={book.image}
         alt="modal book"
         className="object-cover rounded-md mb-4 cursor-pointer h-72"
       />
